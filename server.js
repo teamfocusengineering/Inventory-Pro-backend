@@ -38,7 +38,7 @@ const PORT = process.env.PORT || 5000;
 const MONGODB_URI = process.env.MONGODB_URI;
 
 // Middleware
-const allowedOrigins = ['https://inventory-management-frontend-rosy.vercel.app', 'http://localhost:3000' , 'https://inventory-pro-fe.vercel.app'];
+const allowedOrigins = ['https://inventory-management-frontend-rosy.vercel.app', 'http://localhost:3000' , 'https://inventory-pro-fe.vercel.app/login'];
 app.use(cors({
   origin: function (origin, callback) {
     if (!origin) return callback(null, true);
